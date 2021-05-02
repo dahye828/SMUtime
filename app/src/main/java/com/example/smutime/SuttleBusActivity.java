@@ -37,7 +37,7 @@ public class SuttleBusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.suttlebus_main);
 
-        PackageInfo packageInfo = null;
+        /*PackageInfo packageInfo = null;
         try {
             packageInfo = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
         } catch (PackageManager.NameNotFoundException e) {
@@ -54,9 +54,9 @@ public class SuttleBusActivity extends AppCompatActivity {
             } catch (NoSuchAlgorithmException e) {
                 Log.e("KeyHash", "Unable to get MessageDigest. signature=" + signature, e);
             }
-        }
+        }*/
 
-        /*mspinner1 = findViewById(R.id.spinner);
+        mspinner1 = findViewById(R.id.spinner);
         first = findViewById(R.id.textView2);
         second = findViewById(R.id.textView3);
         third = findViewById(R.id.textView4);
@@ -111,10 +111,10 @@ public class SuttleBusActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
                 first.setText("");
             }
-        });*/
+        });
 
     }
-    /*private String getTime1(){
+    private String getTime1(){
         Date date = new Date();
         Calendar calendar = new GregorianCalendar();
         int year = calendar.get(Calendar.YEAR);
@@ -209,5 +209,5 @@ public class SuttleBusActivity extends AppCompatActivity {
 
         return "     남은 시간\n\n" + bus1 + "\n\n"+ bus2 + "\n\n" + bus3 + "\n\n" + bus4 + "\n\n" + bus5 + "\n\n"+ bus6 + "\n\n";
 
-    }*/
+    }
 }
